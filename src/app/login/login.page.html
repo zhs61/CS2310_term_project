@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label position="stacked">First Name <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" [(ngModel)]="Firstname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Last Name <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" [(ngModel)]="Lastname"></ion-input>
+    </ion-item>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin" (click) ="createprofile()">Create profile</ion-button>
+    </div>
+</ion-content>
